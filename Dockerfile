@@ -18,7 +18,7 @@ RUN adduser -S www-data
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # create lock & run dirs
-RUN mkdir -p /var/lock/nginx /var/run/nginx /var/log/supervisor
+RUN mkdir -p /var/lock/nginx  /var/run/nginx /var/log/supervisor
 
 # copy configuration files
 COPY conf/supervisor.conf /etc/supervisor/supervisor.conf
